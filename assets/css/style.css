@@ -125,7 +125,7 @@ img {
   font-weight: 500;
   color: var(--text-color); /* warna text */
   margin-bottom: 1rem;
-  grid-template-columns: 100px; /*332px*/
+  /*grid-template-columns: 332px; 332px*/
 }
 
 .profile_profession1 {
