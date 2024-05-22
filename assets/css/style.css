@@ -126,7 +126,6 @@ img {
   color: var(--text-color); /* warna text */
   margin-bottom: 1rem;
   grid-template-columns: 332px;
-  width: 332px;
 }
 
 .profile_profession1 {
