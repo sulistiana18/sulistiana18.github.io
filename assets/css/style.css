@@ -124,7 +124,7 @@ img {
   font-size: var(--smaller-font-size);
   font-weight: 500;
   color: var(--text-color); /* warna text */
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .profile_social {
@@ -386,5 +386,3 @@ img {
   }
 
 }
-
-/*# sourceMappingURL=styles.css.map */
