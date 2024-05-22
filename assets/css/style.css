@@ -125,15 +125,6 @@ img {
   font-weight: 500;
   color: var(--text-color); /* warna text */
   margin-bottom: 1rem;
-  grid-template-columns: 332px;
-  text-align: center;
-}
-
-.profile_profession1 {
-  font-size: var(--smaller-font-size);
-  font-weight: 600;
-  color: bold;
-  margin-bottom: 1rem;
 }
 
 .profile_social {
