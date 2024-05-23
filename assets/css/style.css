@@ -2,11 +2,15 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
 :root {
-  --hue: 0;
+  /*--hue: 0;
   --sat: 83%;
   --lig: 47%;
+  */ 
+  --hue: 174;
+  --sat: 63%;
+  --lig: 62%;
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--hue), var(--sat), 67%);
+  --first-color-alt: hsl(var(--hue), var(--sat), 30%);
   --title-color: hsl(var(--hue), 12%, 15%);
   --text-color: hsl(var(--hue), 12%, 45%);
   --text-color-light: hsl(var(--hue), 8%, 75%);
@@ -45,7 +49,6 @@ body {
   color: var(--text-color);
   
   transition: 0.3s;
-  /* For animation dark mode */
 }
 
 h1, h2, h3 {
@@ -94,7 +97,8 @@ img {
 .profile_fill {
   width: 100px;
   height: 100px;
-  background: linear-gradient(180deg, hsla(var(--hue), var(--sat), var(--lig), 1) 100% 100%);
+  /*background: linear-gradient(180deg, hsla(var(--hue), var(--sat), var(--lig), 1) 100% 100%);*/
+  background: linear-gradient(180deg, hsla(var(--hue), var(--sat), var(--lig), 1) 0%, hsla(var(--hue), var(--sat), var(--lig), 0.09) 100%);
   border-radius: 50%;
   overflow: hidden;
   display: flex;
@@ -178,7 +182,7 @@ img {
   padding: 1.15rem 1.5rem;
   border-radius: 0.5rem;
   transition: 0.3s;
-  box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), 0.25);
+  box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), 0.5);
 }
 .button i {
   font-size: 1.25rem;
