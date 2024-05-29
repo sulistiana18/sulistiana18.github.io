@@ -192,15 +192,18 @@ img {
   color: #fff;
 }
 .button_small {
-  padding: 0.75rem;
+  padding: 0.8rem;
   box-shadow: none;
 }
 .button_gray {
-  background-color: var(--text-color-lighten);
+  /*background-color: var(--text-color-lighten);*/
+  
   color: var(--title-color);
 }
 .button_gray:hover {
-  background-color: var(--text-color-light);
+  background-color: var(--first-color-alt);
+  /*background-color: var(--text-color-light);*/
+  
 }
 
 

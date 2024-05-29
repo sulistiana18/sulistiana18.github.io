@@ -32,6 +32,7 @@ body {
     font-size: 24px;
     vertical-align: auto;
     align-items: center;
+    
 }
 
 .logo i {
@@ -39,7 +40,7 @@ body {
 }
 
 .logo:hover{
-    color: blue;
+    color: var(--first-color-alt);
 }
 
 .nav-links {
@@ -50,7 +51,8 @@ body {
 
 .nav-links li {
     display: inline;
-    margin-left: 20px;
+    margin-left: 0.75rem;
+    margin: .2rem;
 }
 
 .nav-links li:first-child {
