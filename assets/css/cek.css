@@ -7,11 +7,23 @@ body {
 }
 
 .topnavbar {
-    background-color: yellow;
+    /*background-color: yellow;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    background-color: hsl(174, 63%, 62%);
+    position: fixed;
+    width: 100%; /* Lebar navbar mengisi seluruh lebar layar */
+    top: 0; /* Navbar berada di bagian atas layar */
+    z-index: 1000; /* Menentukan tingkat z-index untuk mengontrol tumpukan */
+    padding-top: 10px;
+    padding-bottom: 10px;    
 }
 
 .logo {
@@ -85,5 +97,5 @@ body {
   }
 
 .main{
-    padding-top: 4rem;
+    padding-top: 6rem;
 }
