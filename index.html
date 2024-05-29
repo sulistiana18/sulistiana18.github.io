@@ -5,259 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/cek.css" />
     <title>Sulis Tiana's Portofolio</title>
   </head>
   
   <body>
-    <!--=============== HEADER ===============-->
-    <header class="profile container">
-      <div class="profile_container grid">
-        <div class="profile_data">
-          <div class="profile_border">
-            <div class="profile_fill">
-              <img src="assets/img/cat.png" alt="" />
+    <!--========== TOP NAVBAR ==========-->
+    <header>
+        <nav class="topnavbar">
+            <div class="logo">
+              <a href="index.html" class="logo"><i class="ri-home-gear-line"></i> Sulis Tiana</a>
             </div>
-          </div>
+            <ul class="nav-links">
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=081717868178&text=Hello, ...!"
+                    target="_blank" class="button button_small button_gray" >
+                    <i class="ri-whatsapp-line"></i> 
+                  </a>
+                </li>
 
-          <h2 class="profile_name">Sulis Tiana</h2>
-          <h3 class="profile_profession"> Bachelor of Information System and Technology</h3>
-        </div>
-
-        <div class="profile_buttons">
-          <!--<a href="./CV Sulis Tiana.pdf" class="button" target="_blank">-->
-            <a href="./CV .pdf" class="button" target="_blank">
-            Resume <i class="ri-download-line"></i>
-          </a>
-
-          <div class="profile_buttons-small">
-            <a
-              href="https://api.whatsapp.com/send?phone=081717868178&text=Hello, ...!"
-              target="_blank"
-              class="button button_small button_gray">
-              <i class="ri-whatsapp-line"></i>
-            </a>
-            
-            <a
-              href="mailto: tianasulis.st@gmail.com"
-              target="_blank"
-              class="button button_small button_gray"
-            >
-              <i class="ri-mail-line"></i>
-            </a>
-          </div>
-        </div>
-      </div>
+                <li>
+                  <a href="mailto: tianasulis.st@gmail.com" target="_blank" class="button button_small button_gray">
+                    <i class="ri-mail-line"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/sulis-tiana-430a8914a" target="_blank" class="button button_small button_gray">
+                    <i class="ri-linkedin-fill"></i>
+                  </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <!--=============== MAIN ===============-->
     <main class="main">
       <section class="filter container">
-        <ul class="filter_content">
-          
-          <button class="filter_button filter-tab-active" data-target="#ui-ux">UI/UX Design</button>
-          <button class="filter_button" data-target="#qa">Quality Assurance</button>
-          <button class="filter_button" data-target="#da">Data Analysis</button>
-          <button class="filter_button" data-target="#dm">Digital Marketing</button>
-          <!--<button class="filter_button" data-target="#gd">Graphic Design</button>-->
-          <button class="filter_button" data-target="#excel">Ms Excel</button>
-          <!--<button class="filter_button" data-target="#pm">Product & Project Management</button>-->
-          <!--<button class="filter_button" data-target="#wb">Website Development</button>-->
-          <!--<button class="filter_button" data-target="#hrd">HR Development</button>-->
-        </ul>
-
         <div class="filter_sections"> 
-          <div class="project_content grid" data-content id="da" >
-            <article class="project_card">
-              <img
-                src="assets/img/googlelookerstudio.webp"
-                alt=""
-                class="project_img"
-              />
-              <div class="project_modal">
-                <div>
-                  <span class="project_subtitle">Looker Data Studio</span>
-                  <h3 class="project_title">Transaction Dashboard</h3>
-                  <a
-                    href="project-gis.html" target="_blank"
-                    class="project_button button button_small"
-                  > View case study
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project_card">
-              <img
-                src="assets/img/a2.webp"
-                alt=""
-                class="project_img"
-              />
-
-              <div class="project_modal">
-                <div>
-                  <span class="project_subtitle">Data Science</span>
-                  <h3 class="project_title">Data & Model Evaluation</h3>
-                  <a
-                    href="https://colab.research.google.com/drive/1fwJXj554PGWDxLXrlFI9M93q82TXfdt3#scrollTo=crl8TW9BjSaX"
-                    class="project_button button button_small"
-                  >
-                    View case study
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project_card">
-              <img
-                src="assets/img/a3.webp"
-                alt=""
-                class="project_img"
-              />
-
-              <div class="project_modal">
-                <div>
-                  <span class="project_subtitle">Python for Data Analysis</span>
-                  <h3 class="project_title">User & Market Analysis</h3>
-                  <a
-                    href="https://colab.research.google.com/drive/1qPyGA1pDxL7svOyaN8ofjfB8H4nf18Hh#scrollTo=MpazqpD4ztSe"
-                    class="project_button button button_small"
-                  >
-                    View case study
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project_card">
-              <img
-                src="assets/img/a4.webp"
-                alt=""
-                class="project_img"
-              />
-
-              <div class="project_modal">
-                <div>
-                  <span class="project_subtitle">Data</span>
-                  <h3 class="project_title">Prediction & Clustering Model</h3>
-                  <a
-                    href="https://lookerstudio.google.com/s/o3x-gOxN4hk"
-                    class="project_button button button_small"
-                  >
-                    View case study
-                  </a>
-                </div>
-              </div>
-            </article>
-            <h1></h1>
-            
-          </div>
-
-          <div class="project_content grid" data-content id="excel">
-            <article class="project_card">
-              <img
-                src="assets/img/googlelookerstudio.webp"
-                alt=""
-                class="project_img"
-              />
-              <div class="project_modal">
-                <div>
-                  <span class="project_subtitle">Microsoft Excel</span>
-                  <h3 class="project_title">Sales Analytic</h3>
-                  <a
-                    href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
-                    class="project_button button button_small"
-                  >
-                    View case study
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project_card">
-              <img
-                src="assets/img/googlelookerstudio.webp"
-                alt=""
-                class="project_img"
-              />
-              <div class="project_modal">
-                <div>
-                  <span class="project_subtitle">Microsoft Excel</span>
-                  <h3 class="project_title">Sales Dashboard</h3>
-                  <a
-                    href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
-                    class="project_button button button_small"
-                  >
-                    View case study
-                  </a>
-                </div>
-              </div>
-            </article>
-            <h1></h1>
-          </div>
-
-          <div class="project_content grid" data-content id="hrd">
-            <article class="project_card">
-              <img
-                src="assets/img/googlelookerstudio.webp"
-                alt=""
-                class="project_img"
-              />
-              <div class="project_modal">
-                <div>
-                  <span class="project_subtitle">Human Resource</span>
-                  <h3 class="project_title">Forming a Job Description</h3>
-                  <a
-                    href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
-                    class="project_button button button_small"
-                  >
-                    View case study
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project_card">
-              <img
-                src="assets/img/googlelookerstudio.webp"
-                alt=""
-                class="project_img"
-              />
-              <div class="project_modal">
-                <div>
-                  <span class="project_subtitle">SOP, Compensation, and Benefits</span>
-                  <h3 class="project_title">Wage and Salary Administration</h3>
-                  <a
-                    href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
-                    class="project_button button button_small"
-                  >
-                    View case study
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project_card">
-              <img
-                src="assets/img/googlelookerstudio.webp"
-                alt=""
-                class="project_img"
-              />
-              <div class="project_modal">
-                <div>
-                  <span class="project_subtitle">people Analytics</span>
-                  <h3 class="project_title">Sales Dashboard</h3>
-                  <a
-                    href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
-                    class="project_button button button_small"
-                  >
-                    View case study
-                  </a>
-                </div>
-              </div>
-            </article>
-            <h1></h1>
-          </div>
-
           <div class="project_content grid filter_active" data-content id="ui-ux">
             <article class="project_card">
               <img
@@ -359,12 +143,6 @@
               </div>
             </article>
 
-
-            <h1></h1>
-          </div>
-
-          <div class="project_content grid" data-content id="qa">
-            <!--d1.-->
             <article class="project_card">
               <img
                 src="assets/img/googlelookerstudio.webp"
@@ -373,8 +151,8 @@
               />
               <div class="project_modal">
                 <div>
-                  <span class="project_subtitle">Mobile Automation</span>
-                  <h3 class="project_title">Appium - Real Device</h3>
+                  <span class="project_subtitle">UX Series</span>
+                  <h3 class="project_title">User Flow & Low-Fi</h3>
                   <a
                     href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
                     class="project_button button button_small"
@@ -393,35 +171,8 @@
               />
               <div class="project_modal">
                 <div>
-                  <span class="project_subtitle">API Automation</span>
-                  <h3 class="project_title">API Testing</h3>
-                  <a
-                    href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
-                    class="project_button button button_small"
-                  >
-                    View case study
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            
-            <h1></h1>
-          </div>
-
-          <!-------e. Product & Project Management ------>
-          <div class="project_content grid" data-content id="pm">
-            <!--d1.-->
-            <article class="project_card">
-              <img
-                src="assets/img/googlelookerstudio.webp"
-                alt=""
-                class="project_img"
-              />
-              <div class="project_modal">
-                <div>
-                  <span class="project_subtitle">Product Management</span>
-                  <h3 class="project_title">Creating PRD</h3>
+                  <span class="project_subtitle">UX Series</span>
+                  <h3 class="project_title">User Flow & Low-Fi</h3>
                   <a
                     href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
                     class="project_button button button_small"
@@ -440,35 +191,8 @@
               />
               <div class="project_modal">
                 <div>
-                  <span class="project_subtitle">Product Management</span>
-                  <h3 class="project_title">Sprint Backlog</h3>
-                  <a
-                    href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
-                    class="project_button button button_small"
-                  >
-                    View case study
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            
-            <h1></h1>
-          </div>
-
-          <!-------f. Web Development ------>
-          <div class="project_content grid" data-content id="wb">
-            <!--c1.-->
-            <article class="project_card">
-              <img
-                src="assets/img/googlelookerstudio.webp"
-                alt=""
-                class="project_img"
-              />
-              <div class="project_modal">
-                <div>
-                  <span class="project_subtitle">Viu.js</span>
-                  <h3 class="project_title">Viu Basic</h3>
+                  <span class="project_subtitle">UX Series</span>
+                  <h3 class="project_title">User Flow & Low-Fi</h3>
                   <a
                     href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
                     class="project_button button button_small"
@@ -487,8 +211,8 @@
               />
               <div class="project_modal">
                 <div>
-                  <span class="project_subtitle">Node.js</span>
-                  <h3 class="project_title">Parking System</h3>
+                  <span class="project_subtitle">UX Series</span>
+                  <h3 class="project_title">User Flow & Low-Fi</h3>
                   <a
                     href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
                     class="project_button button button_small"
@@ -507,34 +231,8 @@
               />
               <div class="project_modal">
                 <div>
-                  <span class="project_subtitle">Basic Golang</span>
-                  <h3 class="project_title">Gocommerce</h3>
-                  <a
-                    href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
-                    class="project_button button button_small"
-                  >
-                    View case study
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <h1></h1>
-          </div>
-
-          <!-------g. Quality Assurance ------>
-          <div class="project_content grid" data-content id="gd">
-            <!--g1.-->
-            <article class="project_card">
-              <img
-                src="assets/img/googlelookerstudio.webp"
-                alt=""
-                class="project_img"
-              />
-              <div class="project_modal">
-                <div>
-                  <span class="project_subtitle">Adobe Photoshop</span>
-                  <h3 class="project_title">Digital Imaging</h3>
+                  <span class="project_subtitle">UX Series</span>
+                  <h3 class="project_title">User Flow & Low-Fi</h3>
                   <a
                     href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
                     class="project_button button button_small"
@@ -553,34 +251,8 @@
               />
               <div class="project_modal">
                 <div>
-                  <span class="project_subtitle">Adobe Ilustrator</span>
-                  <h3 class="project_title">Designing with Ai</h3>
-                  <a
-                    href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
-                    class="project_button button button_small"
-                  >
-                    View case study
-                  </a>
-                </div>
-              </div>
-            </article>
-                        
-            <h1></h1>
-          </div>
-
-          <!-------h. Graphic Designer ------>
-          <div class="project_content grid" data-content id="dm">
-            <!--h1.-->
-            <article class="project_card">
-              <img
-                src="assets/img/googlelookerstudio.webp"
-                alt=""
-                class="project_img"
-              />
-              <div class="project_modal">
-                <div>
-                  <span class="project_subtitle">Influencer & Community Marketing</span>
-                  <h3 class="project_title">Influencer Campaign Workflow</h3>
+                  <span class="project_subtitle">UX Series</span>
+                  <h3 class="project_title">User Flow & Low-Fi</h3>
                   <a
                     href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
                     class="project_button button button_small"
@@ -599,8 +271,8 @@
               />
               <div class="project_modal">
                 <div>
-                  <span class="project_subtitle">App Store Optimization</span>
-                  <h3 class="project_title">Report & Analysis ASO</h3>
+                  <span class="project_subtitle">UX Series</span>
+                  <h3 class="project_title">User Flow & Low-Fi</h3>
                   <a
                     href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
                     class="project_button button button_small"
@@ -619,8 +291,8 @@
               />
               <div class="project_modal">
                 <div>
-                  <span class="project_subtitle">CRM</span>
-                  <h3 class="project_title">User Journey & CRM Plan</h3>
+                  <span class="project_subtitle">UX Series</span>
+                  <h3 class="project_title">User Flow & Low-Fi</h3>
                   <a
                     href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
                     class="project_button button button_small"
@@ -639,8 +311,8 @@
               />
               <div class="project_modal">
                 <div>
-                  <span class="project_subtitle">Campaign & Media Planning</span>
-                  <h3 class="project_title">Campaign Planning</h3>
+                  <span class="project_subtitle">UX Series</span>
+                  <h3 class="project_title">User Flow & Low-Fi</h3>
                   <a
                     href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
                     class="project_button button button_small"
@@ -659,8 +331,8 @@
               />
               <div class="project_modal">
                 <div>
-                  <span class="project_subtitle">Marketing Management</span>
-                  <h3 class="project_title">Brand Campaign</h3>
+                  <span class="project_subtitle">UX Series</span>
+                  <h3 class="project_title">User Flow & Low-Fi</h3>
                   <a
                     href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
                     class="project_button button button_small"
@@ -671,29 +343,7 @@
               </div>
             </article>
 
-            <article class="project_card">
-              <img
-                src="assets/img/googlelookerstudio.webp"
-                alt=""
-                class="project_img"
-              />
-              <div class="project_modal">
-                <div>
-                  <span class="project_subtitle">Facebook Ads</span>
-                  <h3 class="project_title">Campaign Structure</h3>
-                  <a
-                    href="https://lookerstudio.google.com/s/o3x-gOxN4hk" target="_blank"
-                    class="project_button button button_small"
-                  >
-                    View case study
-                  </a>
-                </div>
-              </div>
-            </article>
-                        
-            <h1></h1>
-          </div>
-
+          </div> <!--batas da-->
 
         </div>
       </section>

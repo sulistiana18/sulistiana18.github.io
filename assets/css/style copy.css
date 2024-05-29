@@ -205,10 +205,10 @@ img {
 
 
 .filter_content {
-  /**margin: 1.5rem 0 2rem;**/
+  margin: 1.5rem 0 2rem;
   background-color: var(--text-color-lighten);
   padding: 0.375rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   display: flex;
   justify-content: space-between;
   column-gap: 0.5rem;
@@ -221,12 +221,12 @@ img {
   width: 100%;
   border: none;
   outline: none;
-  padding: 0.1rem;
+  padding: 1rem;
   color: var(--title-color);
   font-size: var(--small-font-size);
   font-family: var(--body-font);
-  font-weight: 200;
-  border-radius: 1rem;
+  font-weight: 500;
+  border-radius: 0.75rem;
   cursor: pointer;
   background-color: transparent;
   transition: 0.3s;
@@ -336,14 +336,14 @@ img {
   }
 
   .filter_content {
-    width: 968px;
+    width: 664px;
     margin: 3rem auto;
   }
 }
 
 @media screen and (min-width: 776px) {
   .project_content{
-    grid-template-columns: repeat(3, 332px);
+    grid-template-columns: repeat(2, 332px);
     margin-bottom: 50px;
   }
 }
@@ -356,7 +356,6 @@ img {
 
   .profile {
     padding-top: 4rem;
-    padding-left: 25px;
   }
   .profile_border {
     width: 135px;
@@ -390,10 +389,5 @@ img {
   .project_modal {
     padding: 1.5rem;
   }
+
 }
-
-.topnav-right{
-  float: right;
-}
-
-
