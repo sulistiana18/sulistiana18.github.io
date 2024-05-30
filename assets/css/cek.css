@@ -102,3 +102,100 @@ body {
 .main{
     padding-top: 6rem;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.title-section{
+    background-color: hsl(174, 63%, 62%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+}
+
+.content-title{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.grid-item img{
+    max-width: 100%; /* Gambar tidak melebihi lebar grid-item */
+    max-height: 100%; /* Gambar tidak melebihi tinggi grid-item */
+    display: block; /* Menghilangkan margin bawah */
+    margin: auto; /* Untuk gambar di tengah secara vertikal */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.big-title{
+    color: navy;
+    font-size: 3rem;
+}
+
+.metadata{
+    line-height: 3.5rem;
+}
+
+.button2 {
+    display:flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 2.5rem;
+    box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), 0.5);
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+}
+
+.button2 i {
+    font-size: 1.25rem;
+}
+
+.button2:hover {
+    background-color: var(--first-color-alt);
+    color: #fff;
+}
+
+.filter_button{
+    cursor: pointer;
+}
+
+.section2{
+    background-color:white;
+    text-align: center;
+}
+
+.section-subab-title{
+    background-color: navy;
+    padding: 30px;
+}
+
+.white-text{
+    color: white;
+}
+
+.list-section{
+    /*line-height: 2rem;    
+    padding-left: 30rem;*/
+    display: inline-block;
+    text-align: left;
+    line-height: 2rem;
+}

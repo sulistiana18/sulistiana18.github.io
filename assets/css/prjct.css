@@ -1,0 +1,26 @@
+.title-section{
+    background-color: hsl(174, 63%, 62%);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+}
+
+.grid-item img{
+    max-width: 100%; /* Gambar tidak melebihi lebar grid-item */
+    max-height: 100%; /* Gambar tidak melebihi tinggi grid-item */
+    display: block; /* Menghilangkan margin bawah */
+    margin: auto; /* Untuk gambar di tengah secara vertikal */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
