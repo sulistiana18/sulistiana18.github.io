@@ -1,41 +1,32 @@
 /**
- * Get image path with basePath for production
- * In development, returns the path as-is. In production, adds the basePath prefix.
+ * Base path from environment (GitHub Pages / production)
  */
-export const getImgPath = (path: string): string => {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
-  if (!basePath) {
-    return path;
-  }
+/**
+ * Normalize path so it always works in:
+ * - localhost (dev)
+ * - GitHub Pages (production)
+ */
+const withBasePath = (path: string): string => {
+  if (!basePath) return path;
 
-  if (path.startsWith(basePath)) {
-    return path;
-  }
+  // prevent double prefix
+  if (path.startsWith(basePath)) return path;
 
   return `${basePath}${path}`;
 };
 
 /**
- * Get data file path with basePath for production
- * Used for fetching JSON data files
+ * Get image path
+ */
+export const getImgPath = (path: string): string => {
+  return withBasePath(path);
+};
+
+/**
+ * Get JSON / data path (for fetch)
  */
 export const getDataPath = (path: string): string => {
-  if (typeof window !== "undefined") {
-    const basePath = window.location.pathname.split("/")[1] || "";
-    if (basePath && path.startsWith("/")) {
-      return `/${basePath}${path}`;
-    }
-  }
-
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-  if (!basePath) {
-    return path;
-  }
-
-  if (path.startsWith(basePath)) {
-    return path;
-  }
-
-  return `${basePath}${path}`;
+  return withBasePath(path);
 };

@@ -5,7 +5,7 @@
     "category": "UI/UX DESIGN",
     "title": "Corporate Housing (RDP - Rumah Dinas Perusahaan) System",
     "description": "System for managing company housing (RDP) allocation, availability tracking, and employee housing request management.",
-    "link": "/portfolio/product-admin-dashboard"
+    "link": "/"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "category": "FRONTEND DEVELOPMENT",
     "title": "Internship Application",
     "description": "Web-based system to manage internship registration, applicant tracking, and selection process with centralized data monitoring.",
-    "link": "/portfolio/company-landing-page"
+    "link": "/"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "category": "WEB APPLICATION",
     "title": "Coaching Management System",
     "description": "Internal coaching platform with scheduling, dashboard analytics, and role-based access.",
-    "link": "/portfolio/coaching-management-system"
+    "link": "/"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "category": "DASHBOARD DESIGN",
     "title": "HR Analytics Dashboard",
     "description": "Interactive employee analytics dashboard with charts, reports, and clean visualization.",
-    "link": "/portfolio/hr-analytics-dashboard"
+    "link": "/"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "category": "DASHBOARD DESIGN",
     "title": "HR Analytics Dashboard",
     "description": "Interactive employee analytics dashboard with charts, reports, and clean visualization.",
-    "link": "/portfolio/hr-analytics-dashboard"
+    "link": "/"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "category": "DASHBOARD DESIGN",
     "title": "HR Analytics Dashboard",
     "description": "Interactive employee analytics dashboard with charts, reports, and clean visualization.",
-    "link": "/portfolio/hr-analytics-dashboard"
+    "link": "/"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "category": "DASHBOARD DESIGN",
     "title": "HR Analytics Dashboard",
     "description": "Interactive employee analytics dashboard with charts, reports, and clean visualization.",
-    "link": "/portfolio/hr-analytics-dashboard"
+    "link": "/"
   }
   
 ]

@@ -164,7 +164,7 @@ const Portfolio = () => {
         {/* Bottom Button */}
         <div className="mt-14 text-center">
           <Link
-            href="/portfolio"
+            href="/portf"
             className="
               inline-flex items-center gap-2
               rounded-full
