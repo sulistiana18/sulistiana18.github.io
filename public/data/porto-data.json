@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "image": "/images/home/about-me/journey-2.svg",
+    "category": "UI/UX DESIGN",
+    "title": "Corporate Housing (RDP - Rumah Dinas Perusahaan) System",
+    "description": "System for managing company housing (RDP) allocation, availability tracking, and employee housing request management.",
+    "link": "/portfolio/product-admin-dashboard"
+  },
+  {
+    "id": 2,
+    "image": "/images/home/about-me/journey-2.svg",
+    "category": "FRONTEND DEVELOPMENT",
+    "title": "Internship Application",
+    "description": "Web-based system to manage internship registration, applicant tracking, and selection process with centralized data monitoring.",
+    "link": "/portfolio/company-landing-page"
+  },
+  {
+    "id": 3,
+    "image": "/images/home/about-me/journey-2.svg",
+    "category": "WEB APPLICATION",
+    "title": "Coaching Management System",
+    "description": "Internal coaching platform with scheduling, dashboard analytics, and role-based access.",
+    "link": "/portfolio/coaching-management-system"
+  },
+  {
+    "id": 4,
+    "image": "/images/home/about-me/journey-2.svg",
+    "category": "DASHBOARD DESIGN",
+    "title": "HR Analytics Dashboard",
+    "description": "Interactive employee analytics dashboard with charts, reports, and clean visualization.",
+    "link": "/portfolio/hr-analytics-dashboard"
+  },
+  {
+    "id": 5,
+    "image": "/images/home/about-me/journey-2.svg",
+    "category": "DASHBOARD DESIGN",
+    "title": "HR Analytics Dashboard",
+    "description": "Interactive employee analytics dashboard with charts, reports, and clean visualization.",
+    "link": "/portfolio/hr-analytics-dashboard"
+  },
+  {
+    "id": 6,
+    "image": "/images/home/about-me/journey-2.svg",
+    "category": "DASHBOARD DESIGN",
+    "title": "HR Analytics Dashboard",
+    "description": "Interactive employee analytics dashboard with charts, reports, and clean visualization.",
+    "link": "/portfolio/hr-analytics-dashboard"
+  },
+  {
+    "id": 7,
+    "image": "/images/home/about-me/journey-2.svg",
+    "category": "DASHBOARD DESIGN",
+    "title": "HR Analytics Dashboard",
+    "description": "Interactive employee analytics dashboard with charts, reports, and clean visualization.",
+    "link": "/portfolio/hr-analytics-dashboard"
+  }
+  
+]

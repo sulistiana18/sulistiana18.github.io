@@ -1,0 +1,47 @@
+[
+  {
+    "name": "HTML/CSS",
+    "icon": "htmlcss",
+    "label": "Frontend Structure"
+  },
+  {
+    "name": "React.js",
+    "icon": "react",
+    "label": "Frontend Framework"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "javascript",
+    "label": "Programming Language"
+  },
+  {
+    "name": "Vue.js",
+    "icon": "vue",
+    "label": "Frontend Framework"
+  },
+  {
+    "name": "Next.js",
+    "icon": "next",
+    "label": "React Framework"
+  },
+  {
+    "name": "Tailwind CSS",
+    "icon": "tailwind",
+    "label": "CSS Framework"
+  },
+  {
+    "name": "Cursor",
+    "icon": "cursor",
+    "label": "AI Code Editor"
+  },
+  {
+    "name": "Figma",
+    "icon": "figma",
+    "label": "UI/UX Design Tool"
+  },
+  {
+    "name": "Uizard",
+    "icon": "uizard",
+    "label": "AI Design Platform"
+  }
+]

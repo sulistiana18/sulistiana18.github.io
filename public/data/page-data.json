@@ -1,0 +1,26 @@
+{
+    "contactBar": {
+        "contactItems": [
+            {
+                "type": "email",
+                "label": "tianasulis.st@gmail.com",
+                "icon": "/images/icon/mail-icon.svg",
+                "link": "mailto: tianasulis.st@gamil.com"
+            },
+            {
+                "type": "phone",
+                "label": "+62 857 1214 4624",
+                "icon": "/images/icon/call-icon.svg",
+                "link": "tel:+6285712144624"
+            }
+          
+        ],
+        "socialItems": [
+            {
+                "platform": "github",
+                "icon": "/images/icon/github.svg",
+                "link": "https://github.com/sulistiana18"
+            }
+        ]
+    }
+}
