@@ -1,5 +1,5 @@
 "use client";
-
+import { getDataPath, getImgPath } from "@/utils/image";
 import { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
 
@@ -28,7 +28,7 @@ const TechStack = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("/data/tech-data.json");
+        const res = await fetch(getDataPath("/data/tech-data.json"));
         const data = await res.json();
 
         setTechStack(data);

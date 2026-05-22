@@ -1,5 +1,5 @@
 "use client";
-
+import { getDataPath, getImgPath } from "@/utils/image";
 import Image from "next/image";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
@@ -20,7 +20,7 @@ const PortfolioPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("/data/porto-data.json");
+        const res = await fetch(getDataPath("/data/porto-data.json"));
         const data = await res.json();
         setProjects(data);
       } catch (error) {
