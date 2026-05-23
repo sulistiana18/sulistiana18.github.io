@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/images/home/about-me/journey-2.svg",
+    "image": "/images/porto/intera-mock.svg",
     "category": "UI/UX DESIGN",
     "title": "Corporate Housing (RDP - Rumah Dinas Perusahaan) System",
     "description": "System for managing company housing (RDP) allocation, availability tracking, and employee housing request management.",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "image": "/images/home/about-me/journey-2.svg",
+    "image": "/images/porto/intera-mock.svg",
     "category": "FRONTEND DEVELOPMENT",
     "title": "Internship Application",
     "description": "Web-based system to manage internship registration, applicant tracking, and selection process with centralized data monitoring.",
