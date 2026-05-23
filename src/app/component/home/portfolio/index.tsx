@@ -32,6 +32,11 @@ const Portfolio = () => {
     fetchData();
   }, []);
 
+  // ✅ helper hanya untuk cek external link
+  const isExternal = (url: string) => {
+    return url.startsWith("http");
+  };
+
   return (
     <section
       id="portfolio"
@@ -84,7 +89,6 @@ const Portfolio = () => {
                   className="
                     h-[240px] w-full object-cover
                     transition-transform duration-700
-                    
                   "
                 />
 
@@ -135,27 +139,52 @@ const Portfolio = () => {
                   {project.description}
                 </p>
 
-                {/* Button */}
-                <Link
-                  href={project.link}
-                  className="
-                    mt-6 inline-flex items-center gap-2
-                    rounded-full
-                    bg-black
-                    px-5 py-3
-                    text-sm font-semibold text-white
-                    transition-all duration-300
-                    hover:gap-3
-                    hover:bg-orange-500
-                  "
-                >
-                  Case Study
+                {/* Button (FIXED ONLY HERE) */}
+                {isExternal(project.link) ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+                      mt-6 inline-flex items-center gap-2
+                      rounded-full
+                      bg-black
+                      px-5 py-3
+                      text-sm font-semibold text-white
+                      transition-all duration-300
+                      hover:gap-3
+                      hover:bg-orange-500
+                    "
+                  >
+                    Case Study
 
-                  <FiArrowUpRight
-                    size={18}
-                    className="transition-transform duration-300 group-hover:rotate-45"
-                  />
-                </Link>
+                    <FiArrowUpRight
+                      size={18}
+                      className="transition-transform duration-300 group-hover:rotate-45"
+                    />
+                  </a>
+                ) : (
+                  <Link
+                    href={project.link}
+                    className="
+                      mt-6 inline-flex items-center gap-2
+                      rounded-full
+                      bg-black
+                      px-5 py-3
+                      text-sm font-semibold text-white
+                      transition-all duration-300
+                      hover:gap-3
+                      hover:bg-orange-500
+                    "
+                  >
+                    Case Study
+
+                    <FiArrowUpRight
+                      size={18}
+                      className="transition-transform duration-300 group-hover:rotate-45"
+                    />
+                  </Link>
+                )}
               </div>
             </div>
           ))}
