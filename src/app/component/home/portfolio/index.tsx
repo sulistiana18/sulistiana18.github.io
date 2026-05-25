@@ -1,9 +1,21 @@
 "use client";
+
 import { getDataPath, getImgPath } from "@/utils/image";
 import Image from "next/image";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 import { useEffect, useState } from "react";
+
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiPython,
+  SiFigma,
+  SiStreamlit,
+} from "react-icons/si";
+
+import { RiFileExcel2Fill } from "react-icons/ri";
 
 type ProjectType = {
   id: number;
@@ -11,6 +23,7 @@ type ProjectType = {
   category: string;
   title: string;
   description: string;
+  tech: string[];
   link: string;
 };
 
@@ -32,9 +45,38 @@ const Portfolio = () => {
     fetchData();
   }, []);
 
-  // ✅ helper hanya untuk cek external link
+  // CHECK EXTERNAL LINK
   const isExternal = (url: string) => {
     return url.startsWith("http");
+  };
+
+  // TECH ICONS
+  const getTechIcon = (tech: string) => {
+    switch (tech) {
+      case "react":
+        return <SiReact className="text-[#61DAFB]" />;
+
+      case "nextjs":
+        return <SiNextdotjs className="text-black" />;
+
+      case "tailwind":
+        return <SiTailwindcss className="text-[#38BDF8]" />;
+
+      case "python":
+        return <SiPython className="text-[#3776AB]" />;
+
+      case "figma":
+        return <SiFigma className="text-[#F24E1E]" />;
+
+      case "streamlit":
+        return <SiStreamlit className="text-[#FF4B4B]" />;
+
+      case "excel":
+        return <RiFileExcel2Fill className="text-[#217346]" />;
+
+      default:
+        return null;
+    }
   };
 
   return (
@@ -46,8 +88,10 @@ const Portfolio = () => {
       <div className="pointer-events-none absolute left-1/2 top-20 h-[450px] w-[450px] -translate-x-1/2 rounded-full bg-orange-500/10 blur-[140px]" />
 
       <div className="container relative z-10 mx-auto px-4">
+
         {/* Heading */}
         <div className="mx-auto mb-14 max-w-3xl text-center">
+
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-orange-500 md:text-sm">
             MY PORTFOLIO
           </p>
@@ -60,27 +104,32 @@ const Portfolio = () => {
             A collection of projects focused on frontend development, modern UI
             design, dashboards, and interactive digital experiences.
           </p>
+
         </div>
 
         {/* Portfolio Grid */}
         <div className="grid gap-7 md:grid-cols-2">
+
           {projects.slice(0, 2).map((project) => (
             <div
               key={project.id}
               className="
-              group
-              overflow-hidden
-              rounded-[30px]
-              border border-black/5
-              bg-gradient-to-b from-white to-orange-50/40
+                group
+                overflow-hidden
+                rounded-[30px]
+                border border-black/5
+                bg-gradient-to-b from-white to-orange-50/40
 
-              shadow-[0_10px_25px_rgba(0,0,0,0.08)]
-              transition-shadow duration-300 ease-in-out
-              hover:shadow-[0_18px_45px_rgba(0,0,0,0.14)]
-            "
+                shadow-[0_10px_25px_rgba(0,0,0,0.08)]
+                transition-shadow duration-300 ease-in-out
+
+                hover:shadow-[0_18px_45px_rgba(0,0,0,0.14)]
+              "
             >
+
               {/* Image */}
               <div className="relative overflow-hidden">
+
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -89,6 +138,7 @@ const Portfolio = () => {
                   className="
                     h-[240px] w-full object-cover
                     transition-transform duration-700
+                    group-hover:scale-105
                   "
                 />
 
@@ -106,6 +156,7 @@ const Portfolio = () => {
 
               {/* Content */}
               <div className="p-6">
+
                 {/* Category */}
                 <div
                   className="
@@ -139,7 +190,37 @@ const Portfolio = () => {
                   {project.description}
                 </p>
 
-                {/* Button (FIXED ONLY HERE) */}
+                {/* TECH STACK */}
+                <div className="mt-5 flex flex-wrap items-center gap-3">
+
+                  {project.tech?.map((tech, index) => (
+                    <div
+                      key={index}
+                      title={tech}
+                      className="
+                        flex h-11 w-11 items-center justify-center
+                        rounded-2xl
+                        border border-black/5
+                        bg-white/80
+                        text-xl
+
+                        shadow-[0_6px_18px_rgba(0,0,0,0.05)]
+                        backdrop-blur-xl
+
+                        transition-all duration-300
+
+                        hover:-translate-y-1
+                        hover:scale-110
+                        hover:shadow-[0_10px_24px_rgba(0,0,0,0.10)]
+                      "
+                    >
+                      {getTechIcon(tech)}
+                    </div>
+                  ))}
+
+                </div>
+
+                {/* Button */}
                 {isExternal(project.link) ? (
                   <a
                     href={project.link}
@@ -185,13 +266,16 @@ const Portfolio = () => {
                     />
                   </Link>
                 )}
+
               </div>
             </div>
           ))}
+
         </div>
 
         {/* Bottom Button */}
         <div className="mt-14 text-center">
+
           <Link
             href="/portf"
             className="
@@ -213,7 +297,9 @@ const Portfolio = () => {
               className="transition-transform duration-300 hover:rotate-45"
             />
           </Link>
+
         </div>
+
       </div>
     </section>
   );

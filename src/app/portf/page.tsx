@@ -6,12 +6,24 @@ import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 import { useEffect, useState } from "react";
 
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiPython,
+  SiFigma,
+  SiStreamlit,
+} from "react-icons/si";
+
+import { RiFileExcel2Fill } from "react-icons/ri";
+
 type ProjectType = {
   id: number;
   image: string;
   category: string;
   title: string;
   description: string;
+  tech: string[];
   link: string;
 };
 
@@ -36,6 +48,35 @@ const PortfolioPage = () => {
   // CHECK EXTERNAL LINK
   const isExternal = (url: string) => {
     return url.startsWith("http");
+  };
+
+  // TECH ICONS
+  const getTechIcon = (tech: string) => {
+    switch (tech) {
+      case "react":
+        return <SiReact className="text-[#61DAFB]" />;
+
+      case "nextjs":
+        return <SiNextdotjs className="text-black" />;
+
+      case "tailwind":
+        return <SiTailwindcss className="text-[#38BDF8]" />;
+
+      case "python":
+        return <SiPython className="text-[#3776AB]" />;
+
+      case "figma":
+        return <SiFigma className="text-[#F24E1E]" />;
+
+      case "streamlit":
+        return <SiStreamlit className="text-[#FF4B4B]" />;
+
+      case "excel":
+        return <RiFileExcel2Fill className="text-[#217346]" />;
+
+      default:
+        return null;
+    }
   };
 
   return (
@@ -66,7 +107,6 @@ const PortfolioPage = () => {
             shadow-[0_10px_25px_rgba(0,0,0,0.08)]
             transition-all duration-300
 
-            
             hover:bg-orange-500
             hover:text-white
             hover:shadow-[0_18px_45px_rgba(249,115,22,0.28)]
@@ -101,7 +141,7 @@ const PortfolioPage = () => {
         </div>
 
         {/* GRID */}
-        <div className="grid gap-7 md:grid-cols-2 xl:grid-cols-2">
+        <div className="grid gap-7 md:grid-cols-2">
 
           {projects?.map((project) => (
             <div
@@ -131,7 +171,7 @@ const PortfolioPage = () => {
                   className="
                     h-[240px] w-full object-cover
                     transition-transform duration-700
-                    
+                    group-hover:scale-105
                   "
                 />
 
@@ -182,6 +222,36 @@ const PortfolioPage = () => {
                 <p className="mt-4 text-sm leading-relaxed text-black/60">
                   {project.description}
                 </p>
+
+                {/* TECH STACK */}
+                <div className="mt-5 flex flex-wrap items-center gap-3">
+
+                  {project.tech?.map((tech, index) => (
+                    <div
+                      key={index}
+                      title={tech}
+                      className="
+                        flex h-11 w-11 items-center justify-center
+                        rounded-2xl
+                        border border-black/5
+                        bg-white/80
+                        text-xl
+
+                        shadow-[0_6px_18px_rgba(0,0,0,0.05)]
+                        backdrop-blur-xl
+
+                        transition-all duration-300
+
+                        hover:-translate-y-1
+                        hover:scale-110
+                        hover:shadow-[0_10px_24px_rgba(0,0,0,0.10)]
+                      "
+                    >
+                      {getTechIcon(tech)}
+                    </div>
+                  ))}
+
+                </div>
 
                 {/* BUTTON */}
                 {isExternal(project.link) ? (

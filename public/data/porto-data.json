@@ -1,59 +1,56 @@
 [
   {
     "id": 1,
-    "image": "/images/porto/rdp-mock.svg",
-    "category": "UI/UX DESIGN",
-    "title": "Corporate Housing (RDP - Rumah Dinas Perusahaan) System",
-    "description": "System for managing company housing (RDP) allocation, availability tracking, and employee housing request management.",
-    "link": "https://sulistiana.site/intera"
-  },
-  {
-    "id": 2,
     "image": "/images/porto/intera-mock.svg",
     "category": "FRONTEND DEVELOPMENT",
     "title": "Internship Application",
     "description": "Web-based system to manage internship registration, applicant tracking, and selection process with centralized data monitoring.",
+    "tech": ["react", "nextjs", "tailwind"],
     "link": "https://sulistiana.site/intera"
   },
   {
+    "id": 2,
+    "image": "/images/porto/wa-automation.svg",
+    "category": "WORKFLOW AUTOMATION",
+    "title": "Automated Candidate Outreach",
+    "description": "Automation system for recruitment communication, scheduling, and candidate confirmation via WhatsApp.",
+    "tech": ["python", "excel"],
+    "link": "#"
+  },
+  {
     "id": 3,
-    "image": "/images/home/about-me/journey-2.svg",
-    "category": "WEB APPLICATION",
-    "title": "Coaching Management System",
-    "description": "Internal coaching platform with scheduling, dashboard analytics, and role-based access.",
-    "link": "/"
+    "image": "/images/porto/wellbeing-dashboard.svg",
+    "category": "BUSINESS INTELLIGENCE",
+    "title": "Employee Wellbeing Analytics Dashboard",
+    "description": "Interactive Streamlit dashboard for monitoring employee wellbeing data and supporting data-driven decision making.",
+    "tech":["python", "streamlit"],
+    "link": "#"
   },
   {
     "id": 4,
     "image": "/images/home/about-me/journey-2.svg",
-    "category": "DASHBOARD DESIGN",
-    "title": "HR Analytics Dashboard",
-    "description": "Interactive employee analytics dashboard with charts, reports, and clean visualization.",
+    "category": "FRONTEND DEVELOPMENT",
+    "title": "Work Schedule Management System",
+    "description": "System for managing employee shift changes, schedule adjustments, and workforce scheduling requests.",
+    "tech": ["react"],
     "link": "/"
   },
   {
     "id": 5,
-    "image": "/images/home/about-me/journey-2.svg",
-    "category": "DASHBOARD DESIGN",
-    "title": "HR Analytics Dashboard",
-    "description": "Interactive employee analytics dashboard with charts, reports, and clean visualization.",
+    "image": "/images/home/about-me/journey-3.svg",
+    "category": "FRONTEND DEVELOPMENT",
+    "title": "Employee Coaching Management System",
+    "description": "Digital coaching platform for scheduling sessions, tracking progress, managing feedback, and supporting employee development programs.",
+    "tech":["react"],
     "link": "/"
   },
   {
     "id": 6,
-    "image": "/images/home/about-me/journey-2.svg",
-    "category": "DASHBOARD DESIGN",
-    "title": "HR Analytics Dashboard",
-    "description": "Interactive employee analytics dashboard with charts, reports, and clean visualization.",
-    "link": "/"
-  },
-  {
-    "id": 7,
-    "image": "/images/home/about-me/journey-2.svg",
-    "category": "DASHBOARD DESIGN",
-    "title": "HR Analytics Dashboard",
-    "description": "Interactive employee analytics dashboard with charts, reports, and clean visualization.",
-    "link": "/"
+    "image": "/images/porto/rdp-mock.svg",
+    "category": "UI/UX DESIGN",
+    "title": "Corporate Housing System",
+    "description": "System for managing company housing (RDP) allocation, availability tracking, and employee housing request management.",
+    "tech": ["figma"],
+    "link": "https://sulistiana.site/intera"
   }
-  
 ]
