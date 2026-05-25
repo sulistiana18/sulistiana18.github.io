@@ -10,12 +10,12 @@
   },
   {
     "id": 2,
-    "image": "/images/porto/wa-automation.svg",
+    "image": "/images/porto/wa-mock.svg",
     "category": "WORKFLOW AUTOMATION",
     "title": "Automated Candidate Outreach",
     "description": "Automation system for recruitment communication, scheduling, and candidate confirmation via WhatsApp.",
     "tech": ["python", "excel"],
-    "link": "#"
+    "link": "https://sulistiana.site/wa-automation"
   },
   {
     "id": 3,
