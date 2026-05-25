@@ -48,108 +48,221 @@ const ContactBar = () => {
           {/* soft glass gradient overlay */}
           <div className="absolute inset-0 rounded-[32px] bg-gradient-to-br from-white/60 via-white/20 to-white/10 pointer-events-none" />
 
-          {/* Contact Items */}
-          <div
-            className="
-              relative z-10
-              flex flex-col sm:flex-row 
-              items-center sm:items-center 
-              justify-center 
-              gap-3 sm:gap-6 md:gap-8 
-              w-full lg:w-auto
-            "
-          >
-            {contactBarData?.contactItems?.map(
-              (value: any, index: number) => (
-                <Link
-                  key={index}
-                  href={value?.link ?? "#"}
-                  target={value?.type === "website" ? "_blank" : undefined}
-                  rel={
-                    value?.type === "website"
-                      ? "noopener noreferrer"
-                      : undefined
-                  }
-                  className="group flex items-center gap-3 md:gap-4 transition-all duration-300 w-full sm:w-auto"
-                >
-                  {/* Icon */}
-                  <div
+          {/* =======================================================
+              MOBILE LAYOUT
+              - Contact tetap sejajar kanan kiri
+              - Social media di bawah
+          ======================================================= */}
+          <div className="relative z-10 flex flex-col w-full gap-4 lg:hidden">
+            {/* Contact Items - MOBILE */}
+            <div className="grid grid-cols-2 gap-3 w-full">
+              {contactBarData?.contactItems?.map(
+                (value: any, index: number) => (
+                  <Link
+                    key={index}
+                    href={value?.link ?? "#"}
+                    target={value?.type === "website" ? "_blank" : undefined}
+                    rel={
+                      value?.type === "website"
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
                     className="
-                      flex h-10 w-10 md:h-12 md:w-12 
-                      items-center justify-center 
-                      rounded-xl md:rounded-2xl 
-                      bg-primary/10 
-                      group-hover:bg-primary 
-                      transition-all duration-300 
-                      flex-shrink-0
+                      group flex items-center gap-3
+                      rounded-2xl
+                      bg-white/40
+                      border border-white/20
+                      p-3
+                      transition-all duration-300
                     "
                   >
-                    <Image
-                      src={getImgPath(value?.icon)}
-                      alt={value?.type}
-                      width={20}
-                      height={20}
-                      className="md:w-[22px] md:h-[22px] group-hover:brightness-0 group-hover:invert transition duration-300"
-                    />
-                  </div>
+                    {/* Icon */}
+                    <div
+                      className="
+                        flex h-10 w-10
+                        items-center justify-center
+                        rounded-xl
+                        bg-primary/10
+                        group-hover:bg-primary
+                        transition-all duration-300
+                        flex-shrink-0
+                      "
+                    >
+                      <Image
+                        src={getImgPath(value?.icon)}
+                        alt={value?.type}
+                        width={20}
+                        height={20}
+                        className="
+                          group-hover:brightness-0 
+                          group-hover:invert 
+                          transition duration-300
+                        "
+                      />
+                    </div>
 
-                  {/* Text */}
-                  <div className="leading-tight">
-                    <p className="text-[10px] md:text-xs uppercase tracking-widest text-gray-400">
-                      {value?.type}
-                    </p>
+                    {/* Text */}
+                    <div className="leading-tight min-w-0">
+                      <p className="text-[10px] uppercase tracking-widest text-gray-400">
+                        {value?.type}
+                      </p>
 
-                    <h6 className="text-xs md:text-base font-medium text-black group-hover:text-primary transition duration-300">
-                      {value?.label}
-                    </h6>
-                  </div>
-                </Link>
-              )
-            )}
+                      <h6 className="text-xs font-medium text-black group-hover:text-primary transition duration-300 break-words">
+                        {value?.label}
+                      </h6>
+                    </div>
+                  </Link>
+                )
+              )}
+            </div>
+
+            {/* Social Items - MOBILE */}
+            <div className="flex items-center justify-center gap-3 pt-1">
+              {contactBarData?.socialItems?.map(
+                (value: any, index: number) => (
+                  <Link
+                    key={index}
+                    href={value?.link ?? "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group"
+                  >
+                    <div
+                      className="
+                        flex h-10 w-10
+                        items-center justify-center
+                        rounded-full
+                        border border-white/10
+                        bg-white/5
+                        hover:bg-primary
+                        transition-all duration-300
+                        hover:scale-110
+                      "
+                    >
+                      <Image
+                        src={getImgPath(value?.icon)}
+                        alt={value?.platform}
+                        width={18}
+                        height={18}
+                        className="
+                          group-hover:brightness-0 
+                          group-hover:invert 
+                          transition duration-300
+                        "
+                      />
+                    </div>
+                  </Link>
+                )
+              )}
+            </div>
           </div>
 
-          {/* Social Items */}
-          <div
-            className="
-              relative z-10
-              flex flex-wrap sm:flex-nowrap 
-              items-center justify-center lg:justify-end 
-              gap-2 sm:gap-3 
-              w-full lg:w-auto
-            "
-          >
-            {contactBarData?.socialItems?.map(
-              (value: any, index: number) => (
-                <Link
-                  key={index}
-                  href={value?.link ?? "#"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group"
-                >
-                  <div
-                    className="
-                      flex h-10 w-10 md:h-12 md:w-12 
-                      items-center justify-center 
-                      rounded-full 
-                      border border-white/10 
-                      bg-white/5 
-                      hover:bg-primary 
-                      transition-all duration-300 
-                      hover:scale-110
-                    "
+          {/* =======================================================
+              DESKTOP LAYOUT
+              - TAMPILAN ASLI (TIDAK DIUBAH)
+          ======================================================= */}
+          <div className="hidden lg:flex relative z-10 w-full items-center justify-between">
+            {/* Contact Items - DESKTOP */}
+            <div
+              className="
+                flex flex-col sm:flex-row 
+                items-center sm:items-center 
+                justify-center 
+                gap-3 sm:gap-6 md:gap-8 
+                w-full lg:w-auto
+              "
+            >
+              {contactBarData?.contactItems?.map(
+                (value: any, index: number) => (
+                  <Link
+                    key={index}
+                    href={value?.link ?? "#"}
+                    target={value?.type === "website" ? "_blank" : undefined}
+                    rel={
+                      value?.type === "website"
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
+                    className="group flex items-center gap-3 md:gap-4 transition-all duration-300 w-full sm:w-auto"
                   >
-                    <Image
-                      src={getImgPath(value?.icon)}
-                      alt={value?.platform}
-                      width={18}
-                      height={18}
-                      className="md:w-5 md:h-5 group-hover:brightness-0 group-hover:invert transition duration-300"
-                    />
-                  </div>
-                </Link>
-              )
-            )}
+                    {/* Icon */}
+                    <div
+                      className="
+                        flex h-10 w-10 md:h-12 md:w-12 
+                        items-center justify-center 
+                        rounded-xl md:rounded-2xl 
+                        bg-primary/10 
+                        group-hover:bg-primary 
+                        transition-all duration-300 
+                        flex-shrink-0
+                      "
+                    >
+                      <Image
+                        src={getImgPath(value?.icon)}
+                        alt={value?.type}
+                        width={20}
+                        height={20}
+                        className="md:w-[22px] md:h-[22px] group-hover:brightness-0 group-hover:invert transition duration-300"
+                      />
+                    </div>
+
+                    {/* Text */}
+                    <div className="leading-tight">
+                      <p className="text-[10px] md:text-xs uppercase tracking-widest text-gray-400">
+                        {value?.type}
+                      </p>
+
+                      <h6 className="text-xs md:text-base font-medium text-black group-hover:text-primary transition duration-300">
+                        {value?.label}
+                      </h6>
+                    </div>
+                  </Link>
+                )
+              )}
+            </div>
+
+            {/* Social Items - DESKTOP */}
+            <div
+              className="
+                flex flex-wrap sm:flex-nowrap 
+                items-center justify-center lg:justify-end 
+                gap-2 sm:gap-3 
+                w-full lg:w-auto
+              "
+            >
+              {contactBarData?.socialItems?.map(
+                (value: any, index: number) => (
+                  <Link
+                    key={index}
+                    href={value?.link ?? "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group"
+                  >
+                    <div
+                      className="
+                        flex h-10 w-10 md:h-12 md:w-12 
+                        items-center justify-center 
+                        rounded-full 
+                        border border-white/10 
+                        bg-white/5 
+                        hover:bg-primary 
+                        transition-all duration-300 
+                        hover:scale-110
+                      "
+                    >
+                      <Image
+                        src={getImgPath(value?.icon)}
+                        alt={value?.platform}
+                        width={18}
+                        height={18}
+                        className="md:w-5 md:h-5 group-hover:brightness-0 group-hover:invert transition duration-300"
+                      />
+                    </div>
+                  </Link>
+                )
+              )}
+            </div>
           </div>
         </div>
       </div>
