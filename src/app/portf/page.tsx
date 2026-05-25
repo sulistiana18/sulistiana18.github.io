@@ -101,7 +101,7 @@ const PortfolioPage = () => {
         </div>
 
         {/* GRID */}
-        <div className="grid gap-7 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-7 md:grid-cols-2 xl:grid-cols-2">
 
           {projects?.map((project) => (
             <div
