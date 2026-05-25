@@ -19,12 +19,12 @@
   },
   {
     "id": 3,
-    "image": "/images/porto/wellbeing-dashboard.svg",
+    "image": "/images/porto/wellbeing-mock.svg",
     "category": "BUSINESS INTELLIGENCE",
     "title": "Employee Wellbeing Analytics Dashboard",
     "description": "Interactive Streamlit dashboard for monitoring employee wellbeing data and supporting data-driven decision making.",
     "tech":["python", "streamlit"],
-    "link": "#"
+    "link": "https://wellbeing-program.streamlit.app/"
   },
   {
     "id": 4,
