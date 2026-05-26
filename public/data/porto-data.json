@@ -11,21 +11,23 @@
   },
   {
     "id": 2,
-    "image": "https://res.cloudinary.com/dgol2rfjh/image/upload/v1779709555/wa-mock_jss1ax.svg v",
+    "image": "https://res.cloudinary.com/dgol2rfjh/image/upload/v1779709555/wa-mock_jss1ax.svg",
     "category": "WORKFLOW AUTOMATION",
     "title": "Automated Candidate Outreach",
     "description": "Automation system for recruitment communication, scheduling, and candidate confirmation via WhatsApp.",
     "tech": ["python", "excel"],
-    "link": "https://sulistiana.site/wa-automation"
+    "link": "portf/wa-automation",
+    "externalLink": "https://sulistiana.site/wa-automation"
   },
   {
     "id": 3,
     "image": "/images/porto/wellbeing-mock.svg",
     "category": "BUSINESS INTELLIGENCE",
-    "title": "Employee Wellbeing Analytics Dashboard",
+    "title": "Employee Wellbeing Dashboard",
     "description": "Interactive Streamlit dashboard for monitoring employee wellbeing data and supporting data-driven decision making.",
     "tech":["python", "streamlit"],
-    "link": "https://wellbeing-program.streamlit.app/"
+    "link":"/portf/wellbeing",
+    "externalLink": "https://wellbeing-program.streamlit.app/"
   },
   {
     "id": 4,

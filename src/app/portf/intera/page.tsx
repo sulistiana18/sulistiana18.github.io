@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
 import data from "@/../public/data/porto-data.json";
 import ExternalLinkButton from "@/components/ExternalLinkButton";
+import BackButton from "@/components/BackButton";
 
 export const dynamic = "force-static";
 
@@ -22,6 +23,9 @@ export default function InteraCaseStudyPage() {
 
   return (
     <main className="min-h-screen bg-[#F7F8FA] text-[#0F172A]">
+      {/* BACK BUTTON */}
+      <BackButton />
+      
       {/* ================= HERO ================= */}
       <section className="border-b border-black/5 bg-white">
         <div className="mx-auto max-w-7xl px-6 py-24">
