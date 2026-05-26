@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "image": "https://res.cloudinary.com/dgol2rfjh/image/upload/v1779709555/wa-mock_jss1ax.svg",
+    "image": "/images/porto/wa-mock.svg",
     "category": "WORKFLOW AUTOMATION",
     "title": "Automated Candidate Outreach",
     "description": "Automation system for recruitment communication, scheduling, and candidate confirmation via WhatsApp.",
@@ -31,7 +31,7 @@
   },
   {
     "id": 4,
-    "image": "https://res.cloudinary.com/dgol2rfjh/image/upload/v1779709557/rdp-mock_tyjw8k.svg",
+    "image": "/images/porto/rdp-mock.svg",
     "category": "UI/UX DESIGN",
     "title": "Corporate Housing System",
     "description": "System for managing company housing (RDP) allocation, availability tracking, and employee housing request management.",

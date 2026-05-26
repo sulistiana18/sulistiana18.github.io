@@ -16,7 +16,7 @@ type Project = {
 };
 
 export default function RDPCaseStudyPage() {
-  const project = (data as Project[]).find((p) => p.id === 6);
+  const project = (data as Project[]).find((p) => p.id === 4);
 
   if (!project) return <div className="p-10">Project not found</div>;
 
@@ -55,7 +55,7 @@ export default function RDPCaseStudyPage() {
                 <ExternalLinkButton href={project.externalLink} />
 
                 <div className="rounded-xl border border-black/10 bg-white px-5 py-3 text-sm text-black/60">
-                  UI/UX Designer · 2025
+                  UI/UX Designer · 2024
                 </div>
               </div>
             </div>
