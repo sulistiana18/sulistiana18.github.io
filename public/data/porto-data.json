@@ -6,11 +6,12 @@
     "title": "Internship Application",
     "description": "Web-based system to manage internship registration, applicant tracking, and selection process with centralized data monitoring.",
     "tech": ["react", "nextjs", "tailwind"],
-    "link": "https://sulistiana.site/intera"
+    "link": "/portf/intera",
+    "externalLink": "https://sulistiana.site/intera"
   },
   {
     "id": 2,
-    "image": "https://res.cloudinary.com/dgol2rfjh/image/upload/v1779709555/wa-mock_jss1ax.svg",
+    "image": "https://res.cloudinary.com/dgol2rfjh/image/upload/v1779709555/wa-mock_jss1ax.svg v",
     "category": "WORKFLOW AUTOMATION",
     "title": "Automated Candidate Outreach",
     "description": "Automation system for recruitment communication, scheduling, and candidate confirmation via WhatsApp.",

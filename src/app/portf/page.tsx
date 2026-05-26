@@ -5,6 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 import { useEffect, useState } from "react";
+import BackButton from "@/components/BackButton";
+import CaseStudyButton from "@/components/CaseStudyButton";
+
 
 import {
   SiReact,
@@ -92,34 +95,7 @@ const PortfolioPage = () => {
       <div className="pointer-events-none absolute left-1/2 top-20 h-[450px] w-[450px] -translate-x-1/2 rounded-full bg-orange-500/10 blur-[140px]" />
 
       {/* BACK BUTTON */}
-      <div className="fixed right-5 top-5 z-[99999]">
-        <Link
-          href="/"
-          className="
-            inline-flex items-center gap-2
-            rounded-full
-            bg-white/90
-            backdrop-blur-xl
-            border border-black/5
-            px-5 py-3
-            text-sm font-semibold text-black
-
-            shadow-[0_10px_25px_rgba(0,0,0,0.08)]
-            transition-all duration-300
-
-            hover:bg-orange-500
-            hover:text-white
-            hover:shadow-[0_18px_45px_rgba(249,115,22,0.28)]
-          "
-        >
-          Back
-
-          <FiArrowUpRight
-            size={18}
-            className="transition-transform duration-300 hover:rotate-45"
-          />
-        </Link>
-      </div>
+      <BackButton />
 
       <div className="container relative z-10 mx-auto px-4">
 
@@ -254,51 +230,7 @@ const PortfolioPage = () => {
                 </div>
 
                 {/* BUTTON */}
-                {isExternal(project.link) ? (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="
-                      mt-6 inline-flex items-center gap-2
-                      rounded-full
-                      bg-black
-                      px-5 py-3
-                      text-sm font-semibold text-white
-                      transition-all duration-300
-                      hover:gap-3
-                      hover:bg-orange-500
-                    "
-                  >
-                    Case Study
-
-                    <FiArrowUpRight
-                      size={18}
-                      className="transition-transform duration-300 group-hover:rotate-45"
-                    />
-                  </a>
-                ) : (
-                  <Link
-                    href={project.link}
-                    className="
-                      mt-6 inline-flex items-center gap-2
-                      rounded-full
-                      bg-black
-                      px-5 py-3
-                      text-sm font-semibold text-white
-                      transition-all duration-300
-                      hover:gap-3
-                      hover:bg-orange-500
-                    "
-                  >
-                    Case Study
-
-                    <FiArrowUpRight
-                      size={18}
-                      className="transition-transform duration-300 group-hover:rotate-45"
-                    />
-                  </Link>
-                )}
+                <CaseStudyButton href={project.link} />
 
               </div>
             </div>

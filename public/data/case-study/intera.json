@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Employee Shift Management System",
+    "role": "Frontend Developer",
+    "overview": "Sistem manajemen shift untuk pekerja dengan role admin, HC, dan employee.",
+    "challenge": "Membuat UI kompleks dengan banyak role dan data dinamis.",
+    "solution": "Menggunakan component-based UI dan dynamic rendering.",
+    "result": "Workflow HR menjadi lebih cepat dan efisien.",
+    "image": "/images/shift.jpg",
+    "tech": ["React", "Tailwind", "NextJS"],
+    "link": "https://sulistiana.site/intera"
+  }
+]

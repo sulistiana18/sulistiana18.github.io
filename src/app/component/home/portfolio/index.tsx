@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 import { useEffect, useState } from "react";
+import CaseStudyButton from "@/components/CaseStudyButton";
 
 import {
   SiReact,
@@ -221,51 +222,7 @@ const Portfolio = () => {
                 </div>
 
                 {/* Button */}
-                {isExternal(project.link) ? (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="
-                      mt-6 inline-flex items-center gap-2
-                      rounded-full
-                      bg-black
-                      px-5 py-3
-                      text-sm font-semibold text-white
-                      transition-all duration-300
-                      hover:gap-3
-                      hover:bg-orange-500
-                    "
-                  >
-                    Case Study
-
-                    <FiArrowUpRight
-                      size={18}
-                      className="transition-transform duration-300 group-hover:rotate-45"
-                    />
-                  </a>
-                ) : (
-                  <Link
-                    href={project.link}
-                    className="
-                      mt-6 inline-flex items-center gap-2
-                      rounded-full
-                      bg-black
-                      px-5 py-3
-                      text-sm font-semibold text-white
-                      transition-all duration-300
-                      hover:gap-3
-                      hover:bg-orange-500
-                    "
-                  >
-                    Case Study
-
-                    <FiArrowUpRight
-                      size={18}
-                      className="transition-transform duration-300 group-hover:rotate-45"
-                    />
-                  </Link>
-                )}
+                <CaseStudyButton href={project.link} />
 
               </div>
             </div>
