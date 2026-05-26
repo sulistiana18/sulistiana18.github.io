@@ -16,7 +16,7 @@
     "title": "Automated Candidate Outreach",
     "description": "Automation system for recruitment communication, scheduling, and candidate confirmation via WhatsApp.",
     "tech": ["python", "excel"],
-    "link": "portf/wa-automation",
+    "link": "/portf/wa-automation",
     "externalLink": "https://sulistiana.site/wa-automation"
   },
   {
@@ -46,7 +46,7 @@
     "title": "Employee Coaching Management System",
     "description": "Digital coaching platform for scheduling sessions, tracking progress, managing feedback, and supporting employee development programs.",
     "tech":["react"],
-    "link": "portf/coaching",
+    "link": "/portf/coaching",
     "externalLink": "https://sulistiana.site/coaching"
   },
   {
@@ -56,7 +56,7 @@
     "title": "Corporate Housing System",
     "description": "System for managing company housing (RDP) allocation, availability tracking, and employee housing request management.",
     "tech": ["figma"],
-    "link": "portf/rdp",
+    "link": "/portf/rdp",
     "externalLink": "https://sulistiana.site/intera"
   }
 ]
