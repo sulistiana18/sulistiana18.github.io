@@ -90,7 +90,7 @@ const AboutMe = () => {
     /* =========================
        COUNTERS
     ========================= */
-    const projects = useCountUp(99, isVisible);
+    const projects = useCountUp(10, isVisible);
     const experience = useFloatCountUp(1.5, isVisible);
 
     return (

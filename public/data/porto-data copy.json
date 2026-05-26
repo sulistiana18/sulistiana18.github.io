@@ -31,6 +31,26 @@
   },
   {
     "id": 4,
+    "image": "/images/home/about-me/journey-2.svg",
+    "category": "FRONTEND DEVELOPMENT",
+    "title": "Work Schedule Management System",
+    "description": "System for managing employee shift changes, schedule adjustments, and workforce scheduling requests.",
+    "tech": ["react"],
+    "link": "/portf/ws-rule",
+    "externalLink": "https://sulistiana.site/ws-rule"
+  },
+  {
+    "id": 5,
+    "image": "/images/home/about-me/journey-3.svg",
+    "category": "FRONTEND DEVELOPMENT",
+    "title": "Employee Coaching Management System",
+    "description": "Digital coaching platform for scheduling sessions, tracking progress, managing feedback, and supporting employee development programs.",
+    "tech":["react"],
+    "link": "/portf/coaching",
+    "externalLink": "https://sulistiana.site/coaching"
+  },
+  {
+    "id": 6,
     "image": "https://res.cloudinary.com/dgol2rfjh/image/upload/v1779709557/rdp-mock_tyjw8k.svg",
     "category": "UI/UX DESIGN",
     "title": "Corporate Housing System",
