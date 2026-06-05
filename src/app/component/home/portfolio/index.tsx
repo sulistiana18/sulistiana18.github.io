@@ -222,7 +222,7 @@ const Portfolio = () => {
                 </div>
 
                 {/* Button */}
-                <CaseStudyButton href={project.link} />
+                <CaseStudyButton href={project.link} scroll={false}/>
 
               </div>
             </div>
@@ -246,6 +246,7 @@ const Portfolio = () => {
               hover:-translate-y-1
               hover:bg-orange-600
             "
+            scroll={false}
           >
             View More Projects
 
