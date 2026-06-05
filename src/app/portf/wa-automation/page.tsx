@@ -101,9 +101,11 @@ export default function WAAutomationCaseStudyPage() {
               </h3>
 
               <p className="mt-4 text-sm leading-7 text-black/60">
-                Automation system designed to streamline recruitment outreach,
-                candidate scheduling, and confirmation messages via WhatsApp
-                using structured data processing.
+                Internal recruitment automation system developed to streamline
+                candidate communication through WhatsApp. The solution automates
+                interview invitations, schedule confirmations, and recruitment
+                notifications using Python and PyWhatKit while minimizing
+                operational costs.
               </p>
             </div>
 
@@ -142,9 +144,9 @@ export default function WAAutomationCaseStudyPage() {
               </p>
 
               <div className="mt-5 space-y-5">
-                <Stat number="Automated" label="Candidate Outreach" />
-                <Stat number="Faster" label="Scheduling Process" />
-                <Stat number="Reduced" label="Manual Communication" />
+                <Stat number="100+" label="Messages Automated" />
+                <Stat number="Reduced" label="Recruitment Workload" />
+                <Stat number="Zero" label="API Subscription Cost" />
               </div>
             </div>
 
@@ -156,72 +158,121 @@ export default function WAAutomationCaseStudyPage() {
 
           <Block title="Project Overview">
             <p>
-              WA Automation is a WhatsApp-based automation system designed to
-              handle candidate communication, scheduling, and confirmation
-              workflows automatically using structured input data.
+              Recruitment activities often involve repetitive communication
+              tasks such as sending interview invitations, schedule
+              confirmations, and recruitment updates.
+            </p>
+
+            <p className="mt-5">
+              This project was developed to automate those repetitive
+              activities using Python and PyWhatKit, allowing recruiters to
+              focus on candidate evaluation instead of manual messaging.
+            </p>
+
+            <p className="mt-5">
+              Rather than implementing a paid WhatsApp API solution, the
+              system utilizes WhatsApp Web automation to provide a practical
+              and cost-efficient internal recruitment tool.
             </p>
           </Block>
 
           <Block title="Business Context">
             <p>
-              Recruitment teams often spend significant time manually sending
-              messages, scheduling interviews, and confirming attendance.
+              Recruitment demand fluctuates throughout the year. During hiring
+              campaigns, recruiters may need to contact dozens or hundreds of
+              candidates within a short period of time.
             </p>
 
             <p className="mt-5">
-              This system was built to reduce repetitive communication tasks and
-              improve efficiency through automation.
+              Manual communication creates repetitive administrative work,
+              increases the risk of human error, and reduces recruiter
+              productivity.
+            </p>
+
+            <p className="mt-5">
+              The organization required a lightweight automation solution that
+              could improve efficiency without introducing recurring API
+              subscription costs.
             </p>
           </Block>
 
           <Block title="Problem Statement">
             <List>
-              <li>Manual WhatsApp messaging is time-consuming</li>
-              <li>High risk of human error in scheduling</li>
-              <li>No centralized outreach system</li>
-              <li>Difficulty tracking candidate responses</li>
+              <li>1. Manual WhatsApp communication consumed significant time</li>
+              <li>2. Recruitment workload increased during hiring periods</li>
+              <li>3. High risk of messaging and scheduling errors</li>
+              <li>4. No standardized communication workflow</li>
+              <li>5. WhatsApp API solutions introduced recurring costs</li>
             </List>
           </Block>
 
           <Block title="Objectives">
             <List>
-              <li>Automate WhatsApp candidate outreach</li>
-              <li>Streamline scheduling communication</li>
-              <li>Reduce manual HR workload</li>
-              <li>Improve response tracking efficiency</li>
+              <li>Automate recruitment communication workflows</li>
+              <li>Reduce repetitive administrative tasks</li>
+              <li>Improve recruiter productivity</li>
+              <li>Standardize messaging formats</li>
+              <li>Minimize operational costs</li>
+              <li>Accelerate candidate outreach activities</li>
+            </List>
+          </Block>
+
+          <Block title="Why Python & PyWhatKit?">
+            <p>
+              Several technology options were evaluated before development.
+              Python was selected because of its strong automation ecosystem,
+              ease of development, and excellent data processing
+              capabilities.
+            </p>
+
+            <p className="mt-5">
+              PyWhatKit was chosen because it enables automated WhatsApp
+              messaging through WhatsApp Web without requiring paid WhatsApp
+              Business API subscriptions.
+            </p>
+
+            <List>
+              <li>No recurring API subscription costs</li>
+              <li>Rapid implementation and deployment</li>
+              <li>Easy integration with Excel-based datasets</li>
+              <li>Minimal infrastructure requirements</li>
+              <li>Suitable for internal recruitment operations</li>
+              <li>Lower operational cost compared to enterprise solutions</li>
             </List>
           </Block>
 
           <Block title="Role & Contributions">
             <List>
-              <li>Built automation logic using Python scripting</li>
-              <li>Integrated structured Excel-based data processing</li>
-              <li>Designed workflow for scheduling & messaging automation</li>
-              <li>Optimized data handling for batch messaging</li>
+              <li>Designed the recruitment automation workflow</li>
+              <li>Developed automation scripts using Python</li>
+              <li>Built candidate data processing and validation logic</li>
+              <li>Integrated Excel-based recruitment datasets</li>
+              <li>Developed automated WhatsApp messaging workflows</li>
+              <li>Conducted testing and optimization</li>
             </List>
           </Block>
 
           <Block title="Development Approach">
             <div className="grid gap-5 md:grid-cols-2">
 
-              <Card title="Automation Pipeline">
-                Designed structured workflow to process candidate data and
-                trigger automated WhatsApp messages.
+              <Card title="Automation Workflow">
+                Candidate data is processed from structured Excel files and
+                transformed into personalized WhatsApp messages automatically.
               </Card>
 
               <Card title="Data Processing">
-                Used Excel-based datasets to manage candidate scheduling and
-                message personalization.
+                Recruitment schedules and candidate information are managed
+                through structured Excel datasets.
               </Card>
 
-              <Card title="Scalability Focus">
-                Built system to handle batch messaging efficiently without
-                manual intervention.
+              <Card title="Cost Efficient Solution">
+                Eliminates the need for paid WhatsApp API subscriptions while
+                maintaining automation capabilities.
               </Card>
 
-              <Card title="Reliability Layer">
-                Implemented validation to reduce incorrect or duplicate
-                messaging.
+              <Card title="Validation Layer">
+                Built-in validation reduces duplicate messages and scheduling
+                errors.
               </Card>
 
             </div>
@@ -231,21 +282,42 @@ export default function WAAutomationCaseStudyPage() {
             <div className="space-y-4">
 
               <Pair
-                problem="Manual messaging slowed recruitment workflow"
-                solution="Automated WhatsApp message generation using structured datasets"
+                problem="Recruiters spent excessive time sending repetitive messages"
+                solution="Developed automated WhatsApp workflows using Python and structured datasets"
               />
 
               <Pair
-                problem="Scheduling inconsistencies"
-                solution="Centralized scheduling logic using Excel-based control system"
+                problem="Recruitment demand fluctuated significantly"
+                solution="Implemented batch processing capabilities for large candidate volumes"
               />
 
               <Pair
-                problem="Data duplication risks"
-                solution="Implemented validation before sending messages"
+                problem="API implementation would increase operational expenses"
+                solution="Utilized PyWhatKit and WhatsApp Web automation as a cost-efficient alternative"
               />
 
             </div>
+          </Block>
+
+          <Block title="Internal System Considerations">
+            <p>
+              This solution was intentionally designed as an internal desktop
+              automation tool rather than a hosted web application.
+            </p>
+
+            <p className="mt-5">
+              Since recruitment communication is managed by authorized HR
+              personnel within a controlled environment, deploying cloud
+              infrastructure would add unnecessary cost and complexity.
+            </p>
+
+            <List>
+              <li>Lower infrastructure cost</li>
+              <li>Simpler maintenance process</li>
+              <li>Faster implementation</li>
+              <li>Better operational control</li>
+              <li>Reduced deployment complexity</li>
+            </List>
           </Block>
 
           <Block title="Interface Preview">
@@ -263,17 +335,27 @@ export default function WAAutomationCaseStudyPage() {
           <Block title="Results & Impact">
             <List>
               <li>Reduced manual communication workload</li>
+              <li>Increased recruiter productivity</li>
               <li>Faster candidate outreach process</li>
-              <li>Improved scheduling efficiency</li>
-              <li>Standardized messaging workflow</li>
+              <li>Improved communication consistency</li>
+              <li>Reduced risk of human error</li>
+              <li>Standardized recruitment workflows</li>
+              <li>Eliminated recurring messaging platform costs</li>
             </List>
           </Block>
 
           <Block title="Key Learnings">
             <p>
-              This project improved my understanding of automation workflows,
-              data-driven messaging systems, and process optimization using
-              Python and structured datasets.
+              This project strengthened my understanding of business process
+              automation, workflow optimization, and practical software
+              engineering decisions.
+            </p>
+
+            <p className="mt-5">
+              The project demonstrated that the best solution is not always
+              the most complex one. Technology decisions should balance
+              functionality, cost, maintainability, and implementation speed
+              based on actual business needs.
             </p>
           </Block>
 
