@@ -7,7 +7,7 @@
     "description": "Web-based system to manage internship registration, applicant tracking, and selection process with centralized data monitoring.",
     "tech": ["react", "nextjs", "tailwind"],
     "link": "/portf/intera",
-    "externalLink": "https://sulistiana.site/intera"
+    "externalLink": "https://intera-ashy.vercel.app/"
   },
   {
     "id": 2,
