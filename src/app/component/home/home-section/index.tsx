@@ -12,7 +12,7 @@ const index = () => {
                 <h1>I'm Sulis</h1>
                 
               </div>
-              <h3 className="text-orange-500">Frontend Developer</h3>
+              <h3 className="text-orange-500">Software Developer</h3>
             </div>
             <p className="text-secondary font-normal max-w-md xl:max-w-xl">
               UI/UX focused Frontend Developer passionate about crafting intuitive, 
