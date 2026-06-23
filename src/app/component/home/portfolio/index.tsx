@@ -222,7 +222,7 @@ const Portfolio = () => {
                 </div>
 
                 {/* Button */}
-                <CaseStudyButton href={project.link} scroll={false}/>
+                <CaseStudyButton href={project.link}/>
 
               </div>
             </div>
